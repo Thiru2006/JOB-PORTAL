@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label, input, select {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Portal System (UI Mockup)</h1>
+
+        <div class="section">
+            <h2>Register</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="jobseeker">Job Seeker</option>
+                    <option value="employer">Employer</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Login</h2>
+            <form>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail">
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword">
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Post a Job (Employer Only)</h2>
+            <form>
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle">
+
+                <label for="description">Job Description:</label>
+                <input type="text" id="description" name="description">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Available Jobs</h2>
+            <ul>
+                <li>Software Developer at ABC Corp</li>
+                <li>Data Analyst at XYZ Ltd</li>
+                <li>Intern - Web Developer at SoftInc</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
